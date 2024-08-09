@@ -22,7 +22,7 @@
   .main-container {
   
     position: relative;
-    background-image: url('bg.jpg');
+    background-image: url('dubaibg.jpg');
     background-size:cover;
     background-position: center;
     /* Adjust as needed */
@@ -136,7 +136,7 @@
     color: #ffffff;
     z-index: 3;
     margin: 24px;
-    background-color: rgba(255, 255, 255, 0.13);
+    background-color: rgba(167, 167, 167, 0.521);
 
    padding: 30px!important; 
    border-radius: 8px;
@@ -288,6 +288,10 @@ margin: 30px;
   50% { border-color: orange; }
 }
 
+.hidden-content {
+      display: none;
+    }
+
 
 
 </style>
@@ -432,19 +436,18 @@ margin: 30px;
               <div class="svg"><img src="sightseeing.svg" alt="" srcset=""><p class="font-weight-bold">Sightseeing</p>
               </div>   
             </div>
-            <div class="svg-loc" style="display: flex; justify-content: center; align-content: center ; border: 1px soild #e0dede;"><img src="location.svg" style="opacity: 0.9;"><p class="font-weight-bold" style="margin: 0;">Buraj-Khalifa,Dubai</p></div>
+            <div class="svg-loc" style="display: flex; justify-content: center; align-content: center ; border: 1px soild #e0dede;"><img src="location.svg" style="opacity: 0.9;"><p class="font-weight-bold" style="margin: 0;">4 Days</p></div>
 
-            <div style="border: 1px solid #e0dede;">
-              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 01: Airport - Sigiriya - Wild Life</p> </div>
-              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 02: Kandy - Central Hill</p> </div>
-              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 03: Bentota - Beach</p> </div>
-              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 04: Bentota - Beach</p> </div>
-              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 05: Bentota - Airport</p> </div>
+            <div style="border: 1px solid #e0dede; padding: 15px;" >
+              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 01:  Abu Dhabi – Dubai (2 Nights)</p> </div>
+              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 02: Dubai</p> </div>
+              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 03: Dubai</p> </div>
+              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 04: Bentota - Airport</p> </div>
             </div>
             <div class="hotel-dis">
-              <div >3 Star Hotels <span> <br/> ₹29000 PP </div>
-              <div>4 Star Hotels <br/>₹33000 PP</div>
-              <div>5 Star Hotels <br/> ₹40000 PP</div>
+              <div >3 Star Hotels <span> <br/> ₹23000 PP </div>
+              <div>4 Star Hotels <br/>₹28000 PP</div>
+              <div>5 Star Hotels <br/> ₹33000 PP</div>
             </div>
             <div style="margin: 10px;">
               <a onclick="redirect()" class="button-card btn btn-primary">Estimate your trip</a>
@@ -464,19 +467,34 @@ margin: 30px;
               <div class="svg"><img src="sightseeing.svg" alt="" srcset=""><p class="font-weight-bold">Sightseeing</p>
               </div>   
             </div>
-            <div class="svg-loc" style="display: flex; justify-content: center; align-content: center ; border: 1px soild #e0dede;"><img src="location.svg" style="opacity: 0.9;"><p class="font-weight-bold" style="margin: 0;">Abu-Dhabi, Dubai</p></div>
+            <div class="svg-loc" style="display: flex; justify-content: center; align-content: center ; border: 1px soild #e0dede;"><img src="location.svg" style="opacity: 0.9;"><p class="font-weight-bold" style="margin: 0;">5 Days</p></div>
             
-            <div style="border: 1px solid #e0dede;">
-              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 01: Airport - Sigiriya - Wild Life</p> </div>
-              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 02: Kandy - Central Hill</p> </div>
-              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 03: Bentota - Beach</p> </div>
-              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 04: Bentota - Beach</p> </div>
-              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 05: Bentota - Airport</p> </div>
+            <div id="expandableDiv2" class="expand-div" style="border: 1px solid #e0dede; overflow: hidden;">
+              <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+                <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 01: Abu Dhabi – Dubai (2 Nights)</p>
+              </div>
+              <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+                <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 02: Dubai
+                </p>
+              </div>
+              <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+                <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 03: Dubai</p>
+              </div>
+             
+              <div class="  card-dis"><img src="tick.svg" style="margin: 10px; text-align: center;">
+                <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 04:Dubai – Abu Dhabi</p>
+              </div>
+              
+              <div class=" hidden-content card-dis"><img src="tick.svg" style="margin: 10px; text-align: center;">
+                <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day05: Departure to Hometown</p>
+              </div>
+              <button class="show-more-btn" onclick="toggleContent('expandableDiv2', this)">Show More</button>
+  
             </div>
             <div class="hotel-dis">
-              <div >3 Star Hotels <span> <br/> ₹29000 PP </div>
-              <div>4 Star Hotels <br/>₹33000 PP</div>
-              <div>5 Star Hotels <br/> ₹40000 PP</div>
+              <div >3 Star Hotels <span> <br/> ₹25000 PP </div>
+              <div>4 Star Hotels <br/>₹30000 PP</div>
+              <div>5 Star Hotels <br/> ₹35000 PP</div>
             </div>
             <div style="margin: 10px;">
               <a onclick="redirect()" class="button-card btn btn-primary">Estimate your trip</a>
@@ -495,19 +513,38 @@ margin: 30px;
              <div class="svg"><img src="sightseeing.svg" alt="" srcset=""><p class="font-weight-bold">Sightseeing</p>
              </div>   
            </div>
-           <div class="svg-loc" style="display: flex; justify-content: center; align-content: center ; border: 1px soild #e0dede;"><img src="location.svg" style="opacity: 0.9;"><p class="font-weight-bold" style="margin: 0;">Desert,Dubai</p></div>
+           <div class="svg-loc" style="display: flex; justify-content: center; align-content: center ; border: 1px soild #e0dede;"><p class="font-weight-bold" style="margin: 0;">6 Days</p></div>
            
-           <div style="border: 1px solid #e0dede;">
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 01: Airport - Sigiriya - Wild Life</p> </div>
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 02: Kandy - Central Hill</p> </div>
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 03: Bentota - Beach</p> </div>
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 04: Bentota - Beach</p> </div>
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 05: Bentota - Airport</p> </div>
-           </div>
+           <div id="expandableDiv3" class="expand-div" style="border: 1px solid #e0dede; overflow: hidden;">
+            <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 01: Abu Dhabi – Dubai (4 Nights)</p>
+            </div>
+            <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 02: Dubai
+              </p>
+            </div>
+            <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 03: Dubai</p>
+            </div>
+            <div class="card-dis">
+              <img src="tick.svg" style="margin: 10px;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 04: Dubai
+              </p>
+            </div>
+            <div class=" hidden-content card-dis"><img src="tick.svg" style="margin: 10px; text-align: center;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 05:Dubai – Abu Dhabi </p>
+            </div>
+            
+            <div class=" hidden-content card-dis"><img src="tick.svg" style="margin: 10px; text-align: center;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day06: Departure to Hometown</p>
+            </div>
+            <button class="show-more-btn" onclick="toggleContent('expandableDiv3', this)">Show More</button>
+
+          </div>
            <div class="hotel-dis">
              <div >3 Star Hotels <span> <br/> ₹29000 PP </div>
-             <div>4 Star Hotels <br/>₹33000 PP</div>
-             <div>5 Star Hotels <br/> ₹40000 PP</div>
+             <div>4 Star Hotels <br/>₹34000 PP</div>
+             <div>5 Star Hotels <br/> ₹39000 PP</div>
            </div>
            
            <div style="margin: 10px;">
@@ -527,19 +564,40 @@ margin: 30px;
              <div class="svg"><img src="sightseeing.svg" alt="" srcset=""><p class="font-weight-bold">Sightseeing</p>
              </div>   
            </div>
-           <div class="svg-loc" style="display: flex; justify-content: center; align-content: center ; border: 1px soild #e0dede;"><img src="location.svg" style="opacity: 0.9;"><p class="font-weight-bold" style="margin: 0;">Grand-Mosque, Dubai</p></div>
+           <div class="svg-loc" style="display: flex; justify-content: center; align-content: center ; border: 1px soild #e0dede;"><img src="location.svg" style="opacity: 0.9;"><p class="font-weight-bold" style="margin: 0;">7 Days</p></div>
            
-           <div style="border: 1px solid #e0dede;">
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 01: Airport - Sigiriya - Wild Life</p> </div>
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 02: Kandy - Central Hill</p> </div>
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 03: Bentota - Beach</p> </div>
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 04: Bentota - Beach</p> </div>
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 05: Bentota - Airport</p> </div>
-           </div>
+           <div id="expandableDiv4" class="expand-div" style="border: 1px solid #e0dede; overflow: hidden;">
+            <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 01: Abu Dhabi – Dubai (4 Nights)</p>
+            </div>
+            <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 02: Dubai
+              </p>
+            </div>
+            <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 03: Dubai</p>
+            </div>
+            <div class="card-dis">
+              <img src="tick.svg" style="margin: 10px;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 04: Dubai
+              </p>
+            </div>
+            <div class=" hidden-content card-dis"><img src="tick.svg" style="margin: 10px; text-align: center;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 05:Dubai – Abu Dhabi (2 Nights)</p>
+            </div>
+            <div class=" hidden-content card-dis"><img src="tick.svg" style="margin: 10px; text-align: center;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 06: Abu Dhabi </p>
+            </div>
+            <div class=" hidden-content card-dis"><img src="tick.svg" style="margin: 10px; text-align: center;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day07: Departure to Hometown</p>
+            </div>
+            <button class="show-more-btn" onclick="toggleContent('expandableDiv4', this)">Show More</button>
+
+          </div>
            <div class="hotel-dis">
-             <div >3 Star Hotels <span> <br/> ₹29000 PP </div>
-             <div>4 Star Hotels <br/>₹33000 PP</div>
-             <div>5 Star Hotels <br/> ₹40000 PP</div>
+             <div >3 Star Hotels <span> <br/> ₹35000 PP </div>
+             <div>4 Star Hotels <br/>₹40000 PP</div>
+             <div>5 Star Hotels <br/> ₹45000 PP</div>
            </div>
            <div style="margin: 10px;">
             <a onclick="redirect()" class="button-card btn btn-primary">Estimate your trip</a>
@@ -656,6 +714,21 @@ margin: 30px;
         function redirect() {
           window.location.href = "querry.html"
         }
+
+        function toggleContent(divId, btn) {
+        const div = document.getElementById(divId);
+        const hiddenContent = div.querySelectorAll('.hidden-content');
+
+        hiddenContent.forEach(content => {
+          if (content.style.display === "none") {
+            content.style.display = "flex";
+            btn.innerText = "Show Less";
+          } else {
+            content.style.display = "none";
+            btn.innerText = "Show More";
+          }
+        });
+      }
       </script>
       <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

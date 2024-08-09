@@ -22,7 +22,7 @@
     .main-container {
     
       position: relative;
-      background-image: url('bg.jpg');
+      background-image: url('vietnambg.jpg');
       background-size:cover;
       background-position: center;
       /* Adjust as needed */
@@ -44,7 +44,7 @@
       align-items: center;
       display: flex;
       justify-content: center;
-      padding: 30px;
+      
     }
 
     .main-container .col-md-6 {
@@ -267,7 +267,7 @@
 }
 .writing-animation {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 5vw;
+    font-size: 3.5vw;
     white-space: nowrap;
     overflow: hidden;
     
@@ -287,6 +287,14 @@
     from, to { border-color: transparent; }
     50% { border-color: orange; }
 }
+
+.hidden-content {
+      display: none;
+    }
+    .show-more-btn{
+      background-color: #fff;
+      border: #ffffff;
+    }
 
 
 
@@ -466,17 +474,31 @@
             </div>
             <div class="svg-loc" style="display: flex; justify-content: center; align-content: center ; border: 1px soild #e0dede;"><img src="location.svg" style="opacity: 0.9;"><p class="font-weight-bold" style="margin: 0;">Hue, Vietnam</p></div>
             
-            <div style="border: 1px solid #e0dede;">
-              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 01: Airport - Sigiriya - Wild Life</p> </div>
-              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 02: Kandy - Central Hill</p> </div>
-              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 03: Bentota - Beach</p> </div>
-              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 04: Bentota - Beach</p> </div>
-              <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 05: Bentota - Airport</p> </div>
+            <div id="expandableDiv2" class="expand-div" style="border: 1px solid #e0dede; overflow: hidden;">
+              <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+                <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 01: Hanoi</p>
+              </div>
+              <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+                <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 02: Hanoi </p>
+              </div>
+              <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+                <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 03: Hanoi–Halong Bay Overnight Cruise </p>
+              </div>
+              <div class="card-dis">
+                <img src="tick.svg" style="margin: 10px;">
+                <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 04: Halong Bay–Hanoi–Da Nang </p>
+              </div>
+              
+              <div class=" hidden-content card-dis"><img src="tick.svg" style="margin: 10px; text-align: center;">
+                <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day05: Ho Chi Minh–Departure to hometown</p>
+              </div>
+              <button class="show-more-btn" onclick="toggleContent('expandableDiv2', this)">Show More......</button>
+  
             </div>
             <div class="hotel-dis">
-              <div >3 Star Hotels <span> <br/> ₹29000 PP </div>
-              <div>4 Star Hotels <br/>₹33000 PP</div>
-              <div>5 Star Hotels <br/> ₹40000 PP</div>
+              <div >3 Star Hotels  <br/> ₹20000 PP </div>
+              <div>4 Star Hotels <br/>₹25000 PP</div>
+              <div>5 Star Hotels <br/> ₹30000 PP</div>
             </div>
             <div style="margin: 10px;">
               <a onclick="redirect()" class="button-card btn btn-primary">Estimate your trip</a>
@@ -497,17 +519,33 @@
            </div>
            <div class="svg-loc" style="display: flex; justify-content: center; align-content: center ; border: 1px soild #e0dede;"><img src="location.svg" style="opacity: 0.9;"><p class="font-weight-bold" style="margin: 0;">Sapa, Dubai</p></div>
            
-           <div style="border: 1px solid #e0dede;">
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 01: Airport - Sigiriya - Wild Life</p> </div>
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 02: Kandy - Central Hill</p> </div>
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 03: Bentota - Beach</p> </div>
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 04: Bentota - Beach</p> </div>
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 05: Bentota - Airport</p> </div>
-           </div>
+           <div id="expandableDiv3" class="expand-div" style="border: 1px solid #e0dede; overflow: hidden;">
+            <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 01: Hanoi</p>
+            </div>
+            <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 02: Hanoi </p>
+            </div>
+            <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 03: Hanoi–Halong Bay Overnight Cruise </p>
+            </div>
+            <div class="card-dis">
+              <img src="tick.svg" style="margin: 10px;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 04: Halong Bay–Hanoi–Da Nang </p>
+            </div>
+            <div class=" hidden-content card-dis"><img src="tick.svg" style="margin: 10px; text-align: center;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 05 Da Nang–Hoi An–Da Nang</p>
+            </div>
+            <div class=" hidden-content card-dis"><img src="tick.svg" style="margin: 10px; text-align: center;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 06: Ho Chi Minh–Departure to hometown</p>
+            </div>
+            <button class="show-more-btn" onclick="toggleContent('expandableDiv3', this)">Show More</button>
+
+          </div>
            <div class="hotel-dis">
-             <div >3 Star Hotels <span> <br/> ₹29000 PP </div>
-             <div>4 Star Hotels <br/>₹33000 PP</div>
-             <div>5 Star Hotels <br/> ₹40000 PP</div>
+             <div >3 Star Hotels  <br/> ₹24000 PP </div>
+             <div>4 Star Hotels <br/>₹29000 PP</div>
+             <div>5 Star Hotels <br/> ₹34000 PP</div>
            </div>
            
            <div style="margin: 10px;">
@@ -529,17 +567,36 @@
            </div>
            <div class="svg-loc" style="display: flex; justify-content: center; align-content: center ; border: 1px soild #e0dede;"><img src="location.svg" style="opacity: 0.9;"><p class="font-weight-bold" style="margin: 0;">Mekong-Delta, Vietnam</p></div>
            
-           <div style="border: 1px solid #e0dede;">
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 01: Airport - Sigiriya - Wild Life</p> </div>
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 02: Kandy - Central Hill</p> </div>
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 03: Bentota - Beach</p> </div>
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 04: Bentota - Beach</p> </div>
-             <div class="card-dis"><img src="tick.svg" style="margin: 10px;"><p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 05: Bentota - Airport</p> </div>
-           </div>
+           <div id="expandableDiv4" class="expand-div" style="border: 1px solid #e0dede; overflow: hidden;">
+            <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 01: Hanoi</p>
+            </div>
+            <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 02: Hanoi </p>
+            </div>
+            <div class="card-dis"><img src="tick.svg" style="margin: 10px;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 03: Hanoi–Halong Bay Overnight Cruise </p>
+            </div>
+            <div class="card-dis">
+              <img src="tick.svg" style="margin: 10px;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 04: Halong Bay–Hanoi–Da Nang </p>
+            </div>
+            <div class=" hidden-content card-dis"><img src="tick.svg" style="margin: 10px; text-align: center;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day 05 Da Nang–Hoi An–Da Nang</p>
+            </div>
+            <div class=" hidden-content card-dis"><img src="tick.svg" style="margin: 10px; text-align: center;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day06: Da Nang–Ho Chi Minh </p>
+            </div>
+            <div class=" hidden-content card-dis"><img src="tick.svg" style="margin: 10px; text-align: center;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0;">Day07: Ho Chi Minh–Departure to hometown</p>
+            </div>
+            <button class="show-more-btn" onclick="toggleContent('expandableDiv4', this)">Show More</button>
+
+          </div>
            <div class="hotel-dis">
-             <div >3 Star Hotels <span> <br/> ₹29000 PP </div>
-             <div>4 Star Hotels <br/>₹33000 PP</div>
-             <div>5 Star Hotels <br/> ₹40000 PP</div>
+             <div >3 Star Hotels <span> <br/> ₹35000 PP </div>
+             <div>4 Star Hotels <br/>₹40000 PP</div>
+             <div>5 Star Hotels <br/> ₹45000 PP</div>
            </div>
            <div style="margin: 10px;">
             <a onclick="redirect()" class="button-card btn btn-primary">Estimate your trip</a>
@@ -656,6 +713,23 @@
         function redirect() {
           window.location.href = "querry.html"
         }
+
+        function toggleContent(divId, btn) {
+        const div = document.getElementById(divId);
+        const hiddenContent = div.querySelectorAll('.hidden-content');
+
+        hiddenContent.forEach(content => {
+          if (content.style.display === "none") {
+            content.style.display = "flex";
+            btn.innerText = "Show Less....";
+            
+
+          } else {
+            content.style.display = "none";
+            btn.innerText = "Show More....";
+          }
+        });
+      }
       </script>
       <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
