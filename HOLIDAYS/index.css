@@ -1,0 +1,144 @@
+* {
+  /* outline: 2px solid red; */
+  margin: 0;
+  padding:0;
+  
+}
+@font-face {
+  font-family: sofia;
+  src: url(Sofia.otf);
+}
+
+
+/* Custom CSS */
+.main-container {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+  background-image: url('./asset/bg.jpg');
+  background-size:cover;
+  background-position: center;
+  /* Adjust as needed */
+  color: white;
+  /* Set font color to white */
+}
+
+.main-container::before {
+  
+      
+      
+      
+  width: 100vw;
+  height: 100vh;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%); */
+}
+
+.main-container .row {
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.main-container .col-md-6 {
+  /* padding: 0 20px; */
+  display: flex;
+  justify-content: center;
+  /* Adjust as needed */
+}
+
+
+
+/* Add shadow to the image */
+.main-container img {
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); */
+  /* Dark shadow */
+}
+
+/* Adjust Font Awesome Icon Size for Mobile */
+.nav-link i {
+  font-size: 1.5rem;
+}
+.sub-btn {
+  padding: 7px !important;
+  border-radius: 5px !important;
+  margin: 0 !important;
+  background-color: #20a6c9 !important;
+  border-color: #20a6c9 !important;
+} 
+.sub-btn:hover{
+  background-color: #4b0a51 !important
+}
+.sub-btn-white {
+    margin: 4px !important;
+  padding: 8px !important;
+  background-color:#4b0a511c ;
+  border-radius: 8px !important;
+  border-color: #20a6c9 !important;
+  outline-color: #20a6c9!important;
+  color: white!important;
+} 
+.sub-btn-white:hover{
+  background-color: #20a6c9 !important;
+  color: white !important;
+  
+}
+
+
+/* main container start  */
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* <======Form======> */
+.querry-form{
+    /* background-color: #fff; */
+    color: #ffffff;
+    z-index: 3;
+    margin: 20px;
+    background-color: rgba(46, 45, 45, 0.87);
+   
+   padding: 20px!important; 
+   border-radius: 8px;
+  }
+
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Semi-transparent white background for form inputs */
+    color: white;
+    /* Set font color to white */
+  }
+
+  /* <=====midd text====> */
+
+  .service{
+    display: flex; 
+    justify-content: space-around;
+    background-color: #20a6c9;
+    color: #ffffff;
+    font-family: sofia;
+    font-size: 1.5rem;
+    padding: 10px;
+  
+  }
+
+  .services-item {
+    display: flex;
+    text-align: center;
+    /* margin: 10px; */
+  }
+  .services-item image{
+    margin: 10px;
+  }
+  .services-item:first-child {
+              padding-left: 65px; /* Extra space for the first item */
+          }
+  
+  .services-item:last-child {
+              padding-right: 65px; /* Extra space for the last item */
+          }
+
+
+
+

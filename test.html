@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+.benifits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Space between columns */
+}
+
+.benifits-data {
+    flex: 1 1 calc(25% - 20px); /* Four columns */
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #333; /* Example background color */
+    color: #fff;
+    text-align: center;
+    border-radius: 10px; /* Optional: add rounded corners */
+    position: relative; /* Position relative for absolute elements */
+}
+
+.benifits-data:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px; /* Adjust this based on the gap between columns */
+    height: 100%;
+    border-left: 2px dotted #000; /* Dotted border on the left */
+}
+
+
+  </style>
+</head>
+<body>
+    <div class="benifits">
+        <div class="benifits-data">
+            <div class="tick-mark">
+                <img src="white-tick.svg" width="22" height="22" alt="">
+            </div>
+            <div class="benefit-content">
+                <span style="font-size: 1rem;color: #fff;font-family: sofia;">SAVE TIME</span>
+                <p>No need to surf Multiple Sites for Srilanka packages, quotes, travel plans</p>
+            </div>
+        </div>
+        <div class="benifits-data">
+            <div class="tick-mark">
+                <img src="white-tick.svg" width="22" height="22" alt="">
+            </div>
+            <div class="benefit-content">
+                <span style="font-size: 1rem;color: #fff;font-family: sofia;">SAVE TIME</span>
+                <p>No need to surf Multiple Sites for Srilanka packages, quotes, travel plans</p>
+            </div>
+        </div>
+        <div class="benifits-data">
+            <div class="tick-mark">
+                <img src="white-tick.svg" width="22" height="22" alt="">
+            </div>
+            <div class="benefit-content">
+                <span style="font-size: 1rem;color: #fff;font-family: sofia;">SAVE TIME</span>
+                <p>No need to surf Multiple Sites for Srilanka packages, quotes, travel plans</p>
+            </div>
+        </div>
+        <div class="benifits-data">
+            <div class="tick-mark">
+                <img src="white-tick.svg" width="22" height="22" alt="">
+            </div>
+            <div class="benefit-content">
+                <span style="font-size: 1rem;color: #fff;font-family: sofia;">SAVE TIME</span>
+                <p>No need to surf Multiple Sites for Srilanka packages, quotes, travel plans</p>
+            </div>
+        </div>
+        <!-- Repeat for other benefits -->
+    </div>
+    
+    
+    
+</body>
+</html>
